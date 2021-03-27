@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-<?php include('./includes/conexion.php'); ?> <!-- conexion para base de datos-->
-=======
 <?php include('./includes/conexion.php'); ?>
->>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
 
 <h2> Registro de invitados </h2>
 <br><br><br>
 <form action = "crud.php" method="post">
-<<<<<<< HEAD
-    <!-- Datos de registro para BD enventos-->
-=======
->>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
     <input type="text" name="nombre" placeholder="Inserte nombre">
     <input type="text" name="apellido" placeholder="Inserte Apellido">
     <input type="text" name="direccion" placeholder="Inserte direccion">
@@ -24,12 +16,7 @@
         $direccion = $_POST['direccion'];
         $telefono = $_POST['telefono'];
         $fecha = date("y-m-d");
-<<<<<<< HEAD
-
-        #Insertar datos en tabla invitados
-=======
         
->>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
         $sql = "INSERT INTO invitados (id, nombre, apellido, direccion, telefono, fecha) 
         VALUES (NULL, '$nombre', '$apellido', '$direccion', '$telefono', '$fecha')";
 
@@ -43,10 +30,6 @@
         $id = $_POST['id'];
         $nombre = $_POST['nombre'];
 
-<<<<<<< HEAD
-        #Actualizar datos en tabla invitados 
-=======
->>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
         $sql = "UPDATE invitados SET nombre = '$nombre' WHERE id = $id";
         $resultado = $conexion->query($sql);
 
@@ -58,11 +41,7 @@
 
     }else if(isset($_POST['eliminar'])){
         $id = $_POST['id'];
-<<<<<<< HEAD
-        #Eliminar datos de tabla invitados
-=======
 
->>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
         $sql = "DELETE FROM invitados where id = $id";
 
         if($conexion->query($sql) === true){

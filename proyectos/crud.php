@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 <?php include('./includes/conexion.php');
 #Conexion Base de datos
 ?>
+=======
+<?php include('./includes/conexion.php'); ?>
+>>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
 
 <h2> Registro de invitados </h2>
 <br><br><br>
@@ -13,17 +17,26 @@
 </form>
 <?php
     if(isset($_POST['nombre']) && isset($_POST['apellido']) && isset ($_POST['direccion']) && isset ($_POST['telefono'])){
+<<<<<<< HEAD
     
+=======
+>>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
         $nombre = $_POST['nombre'];
         $apellido = $_POST['apellido'];
         $direccion = $_POST['direccion'];
         $telefono = $_POST['telefono'];
         $fecha = date("y-m-d");
+<<<<<<< HEAD
         #POST para envio de datos a base de datos
         
         $sql = "INSERT INTO invitados (id, nombre, apellido, direccion, telefono, fecha) 
         VALUES (NULL, '$nombre', '$apellido', '$direccion', '$telefono', '$fecha')";
         #Inserto de campos hacia tabla invitados
+=======
+        
+        $sql = "INSERT INTO invitados (id, nombre, apellido, direccion, telefono, fecha) 
+        VALUES (NULL, '$nombre', '$apellido', '$direccion', '$telefono', '$fecha')";
+>>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
 
         if( $conexion->query($sql) === true){
             echo "Datos insertados correctamente...";
@@ -34,11 +47,17 @@
     }else if(isset($_POST['editar'])){
         $id = $_POST['id'];
         $nombre = $_POST['nombre'];
+<<<<<<< HEAD
         
 
         $sql = "UPDATE invitados SET nombre = '$nombre' WHERE id = $id";
         $resultado = $conexion->query($sql);
         #Actualizacion de campos de tabla invitados
+=======
+
+        $sql = "UPDATE invitados SET nombre = '$nombre' WHERE id = $id";
+        $resultado = $conexion->query($sql);
+>>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
 
         if($conexion->query($sql) === true){
             echo "Datos actualizados correctamente...";
@@ -49,7 +68,10 @@
         $id = $_POST['id'];
 
         $sql = "DELETE FROM invitados where id = $id";
+<<<<<<< HEAD
         #Sentencia de eliminar registro
+=======
+>>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
 
         if($conexion->query($sql) === true){
             echo "Datos Eliminados...";
@@ -57,6 +79,7 @@
             die("Error al Eliminar datos..." . $conexion->error);
         }
     }
+<<<<<<< HEAD
     $sql = "SELECT nombre FROM invitados";
     $resultado = $conexion->query($sql);  
 
@@ -74,6 +97,14 @@
 
     #$sql = "SELECT * FROM registros INNER JOIN invitados ON registros.invitado_id = invitados.id";
     #$resultado = $conexion->query($sql);
+=======
+/*
+    $sql = "SELECT id, nombre FROM invitados";
+    $resultado = $conexion->query($sql);  */
+
+    $sql = "SELECT * FROM registros INNER JOIN invitados ON registros.invitado_id = invitados.id";
+    $resultado = $conexion->query($sql);
+>>>>>>> 1dd67ac23f0081bfdebf6e781ff3797785bc5624
 /*
     if($resultado->num_rows > 0){
         while($row = $resultado->fetch_assoc()){

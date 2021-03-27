@@ -31,7 +31,7 @@
 					Nombre Apellido:
 				</div>
 				<div class="col-md-8">
-					<input type="text" name="nombreEmpleado" class="form-control" placeholder="Ingrese el apellido de Empleado">
+					<input type="text" name="apellido" class="form-control" placeholder="Ingrese el apellido de Empleado">
 						<!-- nombreEmpleado es nombre de variable que guarda el contenido de lo que ingresa el usuario-->
 				</div>
 			</div>
@@ -41,7 +41,7 @@
 					Correo electronico:
 				</div>
 				<div class="col-md-8">
-					<input type="text" name="nombreEmpleado" class="form-control" placeholder="Ingrese el correo de Empleado">
+					<input type="text" name="email" class="form-control" placeholder="Ingrese el correo de Empleado">
 						<!-- nombreEmpleado es nombre de variable que guarda el contenido de lo que ingresa el usuario-->
 				</div>
 			</div>
@@ -57,6 +57,7 @@
   						<option>3</option>
   						<option>4</option>
   						<option>5</option>
+						  
 					</select>
 				</div>
 			</div>

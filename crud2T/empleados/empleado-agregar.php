@@ -38,6 +38,16 @@
 			<br>
 			<div class="row">
 				<div class="col-md-4" style="text-align: right;">
+					Carnet:
+				</div>
+				<div class="col-md-8">
+					<input type="text" name="carnet" class="form-control" placeholder="Ingrese el carnet de Empleado">
+						<!-- nombreEmpleado es nombre de variable que guarda el contenido de lo que ingresa el usuario-->
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-4" style="text-align: right;">
 					Correo electronico:
 				</div>
 				<div class="col-md-8">
@@ -46,6 +56,8 @@
 				</div>
 			</div>
 			<br>
+			
+			
 			<div class="row">
 				<div class="col-md-4" style="text-align: right;">
 					Seleccione el rol:

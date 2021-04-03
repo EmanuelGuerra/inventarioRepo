@@ -1,13 +1,5 @@
 <?php 
-$servidor = "localhost";
-$usuario = "root";
-$password = "";
-$db= "eventos";
-$conexion = new mysqli($servidor, $usuario, $password, $db);
-
-if($conexion->connect_error){
-	die( "Conexion fallida!: " . $conexion->connect_error);
-}
-/*echo "Conexion exitosa papu! :D";*/
-
+	$conexion = mysqli_connect('localhost', 'root', '');
+	mysqli_select_db($conexion,"bd_crud");
+	#Conexion Base de Datos bd_crud
 ?>

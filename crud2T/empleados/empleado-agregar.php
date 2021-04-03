@@ -15,6 +15,7 @@
 			</div>
 		</div>
 		<br>
+
 		<form action="crud/agregar-empleado.php" method="post">
 			<div class="row">
 				<div class="col-md-4" style="text-align: right;">
@@ -31,7 +32,7 @@
 					Nombre Apellido:
 				</div>
 				<div class="col-md-8">
-					<input type="text" name="nombreEmpleado" class="form-control" placeholder="Ingrese el apellido de Empleado">
+					<input type="text" name="apellidoEmpleado" class="form-control" placeholder="Ingrese el apellido de Empleado">
 						<!-- nombreEmpleado es nombre de variable que guarda el contenido de lo que ingresa el usuario-->
 				</div>
 			</div>
@@ -51,20 +52,18 @@
 					Correo electronico:
 				</div>
 				<div class="col-md-8">
-					<input type="text" name="nombreEmpleado" class="form-control" placeholder="Ingrese el correo de Empleado">
+					<input type="text" name="email" class="form-control" placeholder="Ingrese el correo de Empleado">
 						<!-- nombreEmpleado es nombre de variable que guarda el contenido de lo que ingresa el usuario-->
 				</div>
 			</div>
-			<br>
-			
-			
+			<br>			
 			<div class="row">
 				<div class="col-md-4" style="text-align: right;">
 					Seleccione el rol:
 				</div>
 				<div class="col-md-8">
 					<select class="form-control">
-  						<option>1</option>
+  						<!--<option><?php echo $recuperarColumnas["rolId"]; ?></option>-->
   						<option>2</option>
   						<option>3</option>
   						<option>4</option>
@@ -73,6 +72,7 @@
 				</div>
 			</div>
 			<br>
+			
 			<div class="row">
 				<div class="col-md-offset-8 col-md-2">
 					<button type="submit" class="btn btn-primary btn-block">Guardar</button>

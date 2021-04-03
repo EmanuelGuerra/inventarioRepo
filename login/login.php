@@ -17,19 +17,19 @@
 					<strong class="">Login</strong>
 				</div>
 			</div>
-		<form action="validacion.php" method="post"> 			
 		</div>
         <br>
+		<form action="validacion.php" method="post"> 			
 		<div class="row">
 		   <div class="col-md-12 login-from-row">
-		      <input name="nombre" type="text" placeholder="Usuario" required/>
+		      <input name="usuario" type="text" placeholder="Usuario" required/>
 		   </div>
 		</div>
         <br>
 		
 		<div class="row">
 		   <div class="col-md-12 login-from-row">
-		      <input name="password" type="password" placeholder="Contraseña" required/>
+		      <input name="clave" type="text" placeholder="Contraseña" required/>
 		   </div>
 		</div>
         <br>

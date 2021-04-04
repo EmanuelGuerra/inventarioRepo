@@ -72,10 +72,15 @@
                                 <input class="input100" type="date" name="fechaNacimiento">
                                 <span class="focus-input100"></span>
                             </div>
+                            <div class="wrap-input100 validate-input m-b-26" data-validate="clave es requerida">
+                                <span class="label-input100">Contraseña</span>
+                                <input class="input100" type="password" name="clave">
+                                <span class="focus-input100"></span>
+                            </div>
 
                             <div class="wrap-input100 validate-input m-b-18" data-validate = "Correo is required">
                                 <span class="label-input100">Correo Institucional</span>
-                                <input class="input100" type="email" name="CorreoUsuario" placeholder="Agregue su correo">
+                                <input class="input100" type="email" name="correoUsuario" placeholder="Agregue su correo">
                                 <span class="focus-input100"></span>
                             </div><br><br>
 

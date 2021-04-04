@@ -1,4 +1,4 @@
-<?php include('../includes/conexion.php'); ?>
+?php include('../includes/conexion.php'); ?>
 <!DOCTYPE html>
 	<html lang="en">
 		<head>
@@ -38,16 +38,21 @@
 						<img src="../assets/Imagenes/LOGO INVENTARIO.png" alt="logo" class="logo">
 					</div>
 					<p class="login-card-description">Acceda a su cuenta</p>
-					<form action="#!">
+					<form action="validacionLogin.php" method="post">
 						<div class="form-group">
 							<label for="email" class="sr-only">Email</label>
 							<input type="email" name="email" id="email" class="form-control" placeholder="Email address">
 						</div>
 						<div class="form-group mb-4">
 							<label for="password" class="sr-only">Password</label>
-							<input type="password" name="password" id="password" class="form-control" placeholder="***********">
+							<input type="password" name="clave" id="password" class="form-control" placeholder="***********">
 						</div>
-						<input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+						<div class="row">
+                			<div class="col-md-12 login-from-row">
+                   			 <a href="validacionLogin.php" button class="btn btn-info">Entrar</a>
+                			</div>
+           				</div>
+						<!--<input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">-->
 						</form>
 						<a href="#!" class="forgot-password-link">¿Ha olvidado su contraseña?</a>
 						<p class="login-card-footer-text">

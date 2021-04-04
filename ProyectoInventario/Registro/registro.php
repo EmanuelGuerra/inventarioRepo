@@ -58,11 +58,13 @@
 						<table class="table table-hover">
 							<thead>
 								<tr>
+		
 									<th>N Carnet</th>
 									<th>Nombre Usuario</th>
 									<th>Apellido Usuario</th>
 									<th>Fecha nacimiento</th>
 									<th>Correo Institucional</th>
+
 								</tr>
 							</thead>
 							<tbody>
@@ -81,11 +83,13 @@
 										for($i=0; $i=$fila; $i++){
 											echo '
 												<tr>
-													<td>'.$fila[0].'</td>
+													
 													<td>'.$fila[1].'</td>
 													<td>'.$fila[2].'</td>
 													<td>'.$fila[3].'</td>
 													<td>'.$fila[4].'</td>
+													<td>'.$fila[5].'</td>
+													<td>'.$fila[6].'</td>
 
 												</tr>
 											';

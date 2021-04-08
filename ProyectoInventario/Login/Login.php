@@ -1,4 +1,4 @@
-?php include('../includes/conexion.php'); ?>
+<?php include('../includes/conexion.php'); ?>
 <!DOCTYPE html>
 	<html lang="en">
 		<head>
@@ -38,20 +38,38 @@
 						<img src="../assets/Imagenes/LOGO INVENTARIO.png" alt="logo" class="logo">
 					</div>
 					<p class="login-card-description">Acceda a su cuenta</p>
+
 					<form action="validacionLogin.php" method="post">
-						<div class="form-group">
-							<label for="email" class="sr-only">Email</label>
-							<input type="email" name="email" id="email" class="form-control" placeholder="Email address">
+						<div class="row">
+							<div class="col-md-12 login-from-row">
+							<input name="carnet" type="text" placeholder="Usuario" required/>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+					<div class="col-md-12 login-from-row">
+						<input name="clave" type="password" placeholder="Contraseña" required/>
+					</div>
+					</div>
+					<br>
+					<div class="row">
+					<div class="col-md-12 login-from-row">
+						<button class="btn btn-info">Entrar</button>
+					</div>
+					</div>
+						<!--<div class="form-group">
+							<label >Carnet</label>
+							<input type="text" name="carnet" class="form-control" placeholder="Ingrese Carnet laboral" required/>
 						</div>
 						<div class="form-group mb-4">
 							<label for="password" class="sr-only">Password</label>
-							<input type="password" name="clave" id="password" class="form-control" placeholder="***********">
+							<input type="password" name="clave" id="password" class="form-control" placeholder="***********" required/>
 						</div>
 						<div class="row">
                 			<div class="col-md-12 login-from-row">
-                   			 <a href="validacionLogin.php" button class="btn btn-info">Entrar</a>
+                   			 <button class="btn btn-info">Entrar</button>
                 			</div>
-           				</div>
+           				</div>-->
 						<!--<input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">-->
 						</form>
 						<a href="#!" class="forgot-password-link">¿Ha olvidado su contraseña?</a>

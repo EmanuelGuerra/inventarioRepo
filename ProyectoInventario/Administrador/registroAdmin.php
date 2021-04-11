@@ -32,7 +32,7 @@
                     <div class="wrap-Registro100">
                         <div class="Registro100-form-title" style="background-image: url(../assets/Imagenes/LOGOINVENTARIO.png);">
                             <span class="Registro100-form-title-1">
-                            <h2>Regisro de Administrador</h2>
+                            <h2>Registro de Administrador</h2>
 
                             </span>
                         </div>
